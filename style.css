@@ -248,7 +248,7 @@ section.hero {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  gap: .5rem;
+  gap: 0.5rem;
   color: #000;
   font-weight: 700;
   font-family: "Inter", sans-serif;
@@ -258,7 +258,69 @@ section.hero {
 
 /* HERO STYLE END  */
 
-/* PROJECTS STYLE START  */
+/* SKILLS STYLE START  */
+
+section.skills {
+  /* padding: 10rem 0 5rem; */
+  padding: 5rem 0;
+  background-color: var(--heading);
+}
+
+.skills-con {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.skills-con .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skills-con .top p.head {
+  font-size: 0.688rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.skills-con .top h1 {
+  font-size: 2.25rem;
+  letter-spacing: 0.03rem;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+}
+
+.skills-con p {
+  color: #57534e;
+  font-family: "Inter", sans-serif;
+  line-height: 1.625rem;
+  width: 17.5rem;
+}
+
+.skills-con .skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.skills-con .skills .skill {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.875rem 1rem;
+  border-radius: 1rem;
+  background-color: #c0bdb799;
+  border: 1px solid var(--muted);
+}
+
+/* SKILLS STYLE END  */
 
 
-/* PROJECTS STYLE END  */
+/* ABOUT STYLE START  */
+
+
+/* ABOUT STYLE END  */
