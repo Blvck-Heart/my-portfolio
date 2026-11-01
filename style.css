@@ -374,42 +374,219 @@ section.about {
 .about-con .ls .exp .exp-card p.cap {
   font-size: 0.688rem;
   color: var(--muted);
-  line-height: .875rem;
+  line-height: 0.875rem;
 }
 
-
 .about-con .rs {
-    display: grid;
-    gap: 2rem;
-    font-family: "Inter", sans-serif;
-    color: #57534e;
-    /* font-size: ; */
-} 
+  display: grid;
+  gap: 2rem;
+  font-family: "Inter", sans-serif;
+  color: #57534e;
+  /* font-size: ; */
+}
 
 .about-con .rs p span {
-    color: #000;
-    font-weight: 600;
+  color: #000;
+  font-weight: 600;
 }
 
 .about-con .rs .port {
-    display: grid;
-    gap: 2.5rem;
+  display: grid;
+  gap: 2.5rem;
 }
 
 .about-con .rs .port .let-work a {
-    background-color: #000;
-    color: #faf7f2;
-    padding: 0.75rem 1.5rem;
-    border-radius: 2rem;
+  background-color: #000;
+  color: #faf7f2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
 }
 
 .about-con .rs .port .link a {
-    background-color: #fff;
-    color: #000;
-    padding: 0.75rem 1.5rem;
-    border-radius: 2rem;
-    border: 1px solid #d6d3d1;
+  background-color: #fff;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid #d6d3d1;
+}
+
+/* ABOUT STYLE END  */
+
+/* CONTACT STYLE START  */
+
+section.contact {
+  padding: 5rem 0;
+}
+
+.contact-con {
+  padding: 0 1.25rem;
+}
+
+.contact-con .contact {
+  background-color: #171e31;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.contact .ls .top {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact .ls {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.contact-con .contact .ls .top p.head {
+  font-size: 0.688rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.contact-con .contact .ls .top p {
+  color: #faf7f2;
+}
+
+.contact-con .contact .ls .top p {
+  font-size: 2.25rem;
+  font-family: "Instrument Serif", serif;
+}
+
+.contact .ls .top p span {
+  color: #a1a1a1;
+  font-style: italic;
+}
+
+.contact .ls .top p.text {
+  font-size: 1rem;
+  color: #a1a1a1;
+  font-family: "Inter", sans-serif;
+}
+
+.contact .ls .con {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact .ls .con .con-tent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact .ls .con .con-tent .ls {
+  background-color: #18181b;
+  border-radius: 50%;
+  border: 1px solid #3f3f46;
+  padding: 0.375rem;
+}
+
+.contact .ls .con .con-tent .rs {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact .ls .con .con-tent .rs .top p {
+  color: #a1a1a1;
+  font-size: 0.688rem;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.contact .ls .con .con-tent .rs .bottom a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #faf7f2;
+}
+
+.contact-con .contact form {
+  background-color: #202a3d;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  font-family: "Inter", sans-serif;
+
+}
+
+.contact form div label {
+  color: #a1a1a1;
+}
+
+.contact form div input {
+  margin-top: 0.325rem;
+  background-color: #18181b;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #faf7f2;
+}
+
+.contact form div input:focus {
+  /* border: none;
+  outline: none; */
+  outline: 1px solid var(--accent);
+
+}
+
+.contact form div textarea {
+  margin-top: 0.325rem;
+  background-color: #18181b;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #faf7f2;
+}
+
+.contact form div textarea:focus {
+  border: none;
+  /* outline: none; */
+  outline: 1px solid var(--accent);
+
+
+}
+
+.contact form .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 
-/* ABOUT STYLE END  */
+.contact form .cta button {
+    background-color: var(--accent);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 2rem;
+    color: #fff;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.contact .cta span.write {
+    color: #a1a1a1;
+    font-size: 0.75rem;
+}
+
+.contact .cta span.write a {
+    color: #faf7f2;
+    border-bottom: 1px solid;
+}
+
+
+/* CONTACT STYLE END  */
+
+
+/* FOOTER STYLE START  */
+
+
+/* FOOTER STYLE END  */
