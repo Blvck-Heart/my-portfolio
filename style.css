@@ -412,11 +412,12 @@ section.about {
 }
 
 .about-con .rs .port .link a {
-  background-color: #fff;
+  background-color: var(--card-bg);
+  color: var(--heading);
+  border: 1px solid var(--card-border);
   color: var(--heading);
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
-  border: 1px solid #d6d3d1;
 }
 
 /* ABOUT STYLE END  */
@@ -528,6 +529,7 @@ section.contact {
 
 .contact form div input {
   margin-top: 0.325rem;
+  width: 100%;
   background-color: #18181b;
   border: none;
   border-radius: 0.75rem;
