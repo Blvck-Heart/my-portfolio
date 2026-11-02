@@ -51,6 +51,10 @@ nav {
   display: none;
 }
 
+/* =========================================================
+   MOBILE STYLES START — 320 to 767px
+   ========================================================= */
+
 /* HERO STYLE START  */
 
 section.hero {
@@ -792,8 +796,6 @@ footer.author {
 
 /* =========================================================
    TABLET STYLES START — 768px to 1023px
-   Layout follows the supplied tablet reference.
-   Existing mobile styles remain the default below 768px.
    ========================================================= */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
