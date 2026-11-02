@@ -772,10 +772,856 @@ footer {
   gap: 1rem;
 }
 
+/* WATERMARK STYLE START */
+
+
 footer.author {
   padding: 0;
   color: var(--muted);
   text-align: center;
   font-size: 3rem;
 }
+
+/* WATERMARK STYLE END */
+
 /* FOOTER STYLE END  */
+
+
+
+
+
+/* =========================================================
+   TABLET STYLES START — 768px to 1023px
+   Layout follows the supplied tablet reference.
+   Existing mobile styles remain the default below 768px.
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* NAVIGATION STYLE START */
+  nav {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-con .ls a {
+    color: var(--heading);
+    font-family: "Instrument Serif", serif;
+    font-size: 1.5rem;
+  }
+
+  .nav-con .rs ul {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.2vw, 1.75rem);
+  }
+
+  .nav-con .rs ul li a {
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .nav-con .rs ul li:last-child a {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    color: var(--heading);
+    background-color: var(--accent);
+    border-radius: 2rem;
+  }
+  /* NAVIGATION STYLE END */
+
+
+ 
+/* HERO STYLE START */
+
+section.hero {
+  padding: 3.75rem 2rem 2rem;
+}
+
+.hero-con {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 282px 250px 193px 193px;
+  gap: 1rem;
+}
+
+/* ENG CARD STYLE START */
+
+.hero-con .eng {
+  grid-column: 1 / 10;
+  grid-row: 1 / 3;
+
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-con .eng .bottom h1 {
+  max-width: 12ch;
+  font-size: 3.5rem;
+  line-height: 0.98;
+  font-weight: 400;
+}
+
+/* ENG CARD STYLE END */
+
+
+/* STATUS CARD STYLE START */
+
+.hero-con .status {
+  grid-column: 10 / 13;
+  grid-row: 1;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-con .status .bottom {
+  gap: 0.75rem;
+}
+
+.hero-con .status .bottom p {
+  max-width: 17ch;
+  line-height: 1.5;
+}
+
+/* STATUS CARD STYLE END */
+
+
+/* LOCATION CARD STYLE START */
+
+.hero-con .location {
+  grid-column: 10 / 13;
+  grid-row: 2;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-con .location .bottom p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* LOCATION CARD STYLE END */
+
+
+/* ABOUT CARD STYLE START */
+
+.hero-con .about {
+  grid-column: 1 / 7;
+  grid-row: 3 / 5;
+
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.hero-con .about .bottom p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* ABOUT CARD STYLE END */
+
+
+/* TRUST CARD STYLE START */
+
+.hero-con .trust {
+  grid-column: 7 / 13;
+  grid-row: 3;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-con .trust .bottom p {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.65rem;
+  row-gap: 0.35rem;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+/* TRUST CARD STYLE END */
+
+
+/* LINK CARD STYLE START */
+
+.hero-con .link-con {
+  grid-column: 7 / 13;
+  grid-row: 4;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.link-con .projects,
+.hero-con .link-con .git {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LINK CARD STYLE END */
+
+/* HERO STYLE END */
+
+
+
+  /* SKILLS STYLE START */
+  section.skills {
+    padding: 5rem 2rem;
+    background-color: var(--background);
+  }
+
+  .skills-con {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 2.75rem;
+  }
+
+  .skills-con .top {
+    max-width: 38rem;
+  }
+
+  .skills-con .top h1 {
+    color: var(--heading);
+  }
+
+  .skills-con .top > p:not(.head) {
+    width: auto;
+    color: var(--text);
+  }
+
+  .skills-con .skills {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .skills-con .skills .skill {
+    min-width: 0;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--heading);
+  }
+
+  .skills-con .skills .skill svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex: 0 0 auto;
+    fill: currentColor;
+  }
+
+  .skills-con .skills .skill p {
+    width: auto;
+    min-width: 0;
+    color: var(--text);
+  }
+  /* SKILLS STYLE END */
+
+
+  
+/* ABOUT STYLE START */
+
+section.about {
+  padding: 5rem 2rem;
+}
+
+.about-con {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* ABOUT LEFT STYLE START */
+
+.about-con .ls {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-con .ls p {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.about-con .ls .exp {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-con .ls .exp .exp-card {
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+}
+
+.about-con .ls .exp .exp-card p.top {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  color: var(--heading);
+}
+
+.about-con .ls .exp .exp-card p.cap {
+  font-size: 0.688rem;
+  line-height: 1rem;
+  color: var(--muted);
+}
+
+/* ABOUT LEFT STYLE END */
+
+
+/* ABOUT RIGHT STYLE START */
+
+.about-con .rs {
+  display: grid;
+  gap: 1.75rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.about-con .rs p span {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* QUOTE */
+.about-con .rs blockquote {
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--accent);
+  color: var(--heading);
+  font-family: "Instrument Serif", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* ACTION BUTTONS */
+.about-con .rs .port {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-con .rs .port .let-work a,
+.about-con .rs .port .link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.about-con .rs .port .let-work a {
+  background-color: var(--accent);
+  color: var(--heading);
+}
+
+.about-con .rs .port .link a {
+  background-color: var(--card-bg);
+  color: var(--heading);
+  border: 1px solid var(--card-border);
+}
+
+/* ABOUT RIGHT STYLE END */
+
+/* ABOUT STYLE END */
+
+
+
+ 
+/* CONTACT STYLE START */
+
+section.contact {
+  padding: 5rem 0;
+}
+
+.contact-con {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-con .contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: #111111;
+  border-radius: 2.5rem;
+}
+
+/* CONTACT INFORMATION STYLE START */
+
+.contact .ls {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.contact .ls .top {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-con .contact .ls .top p {
+  color: #faf7f2;
+  font-size: 2.25rem;
+  font-family: "Instrument Serif", serif;
+}
+
+.contact-con .contact .ls .top p.head {
+  color: var(--accent);
+  font-size: 0.688rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.contact .ls .top p span {
+  color: #a1a1a1;
+  font-style: italic;
+}
+
+.contact .ls .top p.text {
+  max-width: 32rem;
+  color: #a1a1a1;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+/* CONTACT DETAILS */
+
+.contact .ls .con {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact .ls .con .con-tent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact .ls .con .con-tent .ls {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #202023;
+  border: 1px solid #3f3f46;
+  border-radius: 50%;
+}
+
+.contact .ls .con .con-tent .ls img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.contact .ls .con .con-tent .rs {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact .ls .con .con-tent .rs .top p {
+  color: #a1a1a1;
+  font-size: 0.688rem;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+}
+
+.contact .ls .con .con-tent .rs .bottom a {
+  color: #faf7f2;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* CONTACT INFORMATION STYLE END */
+
+
+/* CONTACT FORM STYLE START */
+
+.contact-con .contact > .rs form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 2rem;
+  background-color: #262629;
+  border: 1px solid #3f3f46;
+  border-radius: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.contact form .name,
+.contact form .email {
+  grid-column: span 1;
+}
+
+.contact form .subject,
+.contact form .message,
+.contact form .cta {
+  grid-column: 1 / -1;
+}
+
+.contact form div label {
+  color: #a1a1a1;
+  font-size: 0.8rem;
+}
+
+.contact form div input,
+.contact form div textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #1e1e21;
+  border: 1px solid #3f3f46;
+  border-radius: 0.75rem;
+  color: #faf7f2;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+}
+
+.contact form div textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact form .cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.contact form .cta button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.contact .cta span.write {
+  color: #a1a1a1;
+  font-size: 0.75rem;
+}
+
+.contact .cta span.write a {
+  color: #faf7f2;
+  border-bottom: 1px solid;
+}
+
+/* CONTACT FORM STYLE END */
+
+/* CONTACT STYLE END */
+
+
+
+  
+/* FOOTER STYLE START */
+
+footer {
+  padding: 4rem 2rem 0;
+  background-color: var(--background);
+}
+
+.foot-con {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+}
+
+/* PROJECT CTA STYLE START */
+
+.foot-con > .top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.foot-con > .top .ls {
+  display: grid;
+  gap: 1rem;
+}
+
+.foot-con > .top .ls .top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.foot-con > .top .ls .top p {
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.688rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.foot-con > .top .ls h3 {
+  color: var(--heading);
+  font-family: "Instrument Serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.foot-con > .top .ls > p {
+  max-width: 32rem;
+  color: var(--text);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.foot-con > .top .rs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.foot-con > .top .rs a.start {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.75rem;
+  background-color: var(--accent);
+  color: var(--heading);
+  border-radius: 2rem;
+}
+
+.foot-con > .top .rs span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.foot-con > .top .rs span img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.foot-con > .top .rs span a {
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+}
+
+/* PROJECT CTA STYLE END */
+
+
+/* FOOTER MAIN STYLE START */
+
+.foot-con > .mid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "brand navigate"
+    "social navigate";
+  align-items: start;
+  gap: 2rem;
+}
+
+.foot-con > .mid > .ls {
+  grid-area: brand;
+  display: grid;
+  gap: 1rem;
+}
+
+.foot-con > .mid > .ls h4 {
+  color: var(--heading);
+  font-family: "Instrument Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.foot-con > .mid > .ls p {
+  max-width: 22rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.foot-con > .mid > .center {
+  grid-area: navigate;
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.foot-con > .mid > .center h5,
+.foot-con > .mid > .rs h5 {
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.688rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.foot-con > .mid > .center ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.foot-con > .mid > .center ul li a {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/* FOOTER MAIN STYLE END */
+
+
+/* SOCIAL STYLE START */
+
+.foot-con > .mid > .rs {
+  grid-area: social;
+  display: grid;
+  justify-items: start;
+  gap: 1.25rem;
+}
+
+.foot-con > .mid > .rs .socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.foot-con > .mid > .rs .socials a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+}
+
+.foot-con > .mid > .rs .socials a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--text);
+}
+
+.foot-con > .mid > .rs > p {
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.foot-con > .mid > .rs > p span {
+  color: var(--heading);
+}
+
+/* SOCIAL STYLE END */
+
+
+/* FOOTER BOTTOM STYLE START */
+
+.foot-con > hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: var(--card-border);
+  margin: 0;
+}
+
+.foot-con > .bottom {
+  padding-bottom: 1rem;
+}
+
+.foot-con > .bottom > .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.foot-con > .bottom > .top p,
+.foot-con > .bottom > .top a {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.foot-con > .bottom > .top a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* FOOTER BOTTOM STYLE END */
+
+
+/* WATERMARK STYLE START */
+
+footer.author {
+  padding: 2rem 2rem 1rem;
+  overflow: hidden;
+  background-color: var(--background);
+  color: var(--card-bg);
+  text-align: center;
+}
+
+footer.author p {
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(5rem, 12vw, 9rem);
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+/* WATERMARK STYLE END */
+
+/* FOOTER STYLE END */
+}
+
+/* TABLET STYLES END */
